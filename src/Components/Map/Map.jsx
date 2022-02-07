@@ -14,7 +14,7 @@ const Map = ({ coords, places, setCoords, setBounds, setChildClicked, weatherDat
   return (
     <div className={classes.mapContainer}>
       <GoogleMapReact
-        bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_MAP_API_KEY }}
+        bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_MAPS_API_KEY }}
         defaultCenter={coords}
         center={coords}
         defaultZoom={14}
@@ -49,7 +49,7 @@ const Map = ({ coords, places, setCoords, setBounds, setChildClicked, weatherDat
         ))}
         {weatherData?.list?.length && weatherData.list.map((data, i) => (
           <div key={i} lat={data.coord.lat} lng={data.coord.lon}>
-            <img src={`http://openweathermap.org/img/w/${data.weather[0].icon}.png`} height="70px" />
+            <img src={`https://openweathermap.org/img/w/${data.weather[0].icon}.png`} height="100px" />
           </div>
         ))}
       </GoogleMapReact>

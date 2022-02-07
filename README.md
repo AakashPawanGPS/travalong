@@ -8,4 +8,4 @@ Build and Deploy an advanced Travel Companion Application using Google Maps. Wit
 - Created a User Interface using Matreial UI
 - Worked with Google Maps API
 - Fetched data from RapidAPI
-- Delpoyed the application on Netlify
+- Deployed the application on Netlify
